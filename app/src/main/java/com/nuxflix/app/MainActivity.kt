@@ -209,7 +209,7 @@ class MainActivity : AppCompatActivity() {
     private fun setupBottomNav() {
         // ✅ فقط "الرئيسية" قابل للبقاء محددًا (checkable)
         // الباقي أزرار تنقّل لصفحات أخرى، لذلك لا يجب أن يبقى لونها أحمر بعد الخروج
-        listOf(R.id.nav_categories, R.id.nav_football, R.id.nav_downloads, R.id.nav_settings, R.id.nav_account)
+        listOf(R.id.nav_categories, R.id.nav_football, R.id.nav_downloads, R.id.nav_account)
             .forEach { id -> bottomNav.menu.findItem(id).isCheckable = false }
 
         bottomNav.setOnItemSelectedListener { item ->
@@ -229,10 +229,6 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.nav_downloads -> {
                     startActivity(Intent(this, DownloadsActivity::class.java))
-                    true
-                }
-                R.id.nav_settings -> {
-                    startActivity(Intent(this, SettingsActivity::class.java))
                     true
                 }
                 R.id.nav_account -> {

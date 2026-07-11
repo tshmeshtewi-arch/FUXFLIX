@@ -1,5 +1,6 @@
 package com.nuxflix.app
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
@@ -11,6 +12,7 @@ class AccountActivity : AppCompatActivity() {
         setContentView(R.layout.activity_account)
 
         val btnBack: ImageButton = findViewById(R.id.btn_account_back)
+        val btnOpenSettings: ImageButton = findViewById(R.id.btn_open_settings)
         val userName: EditText = findViewById(R.id.account_name)
         val userEmail: EditText = findViewById(R.id.account_email)
         val userPassword: EditText = findViewById(R.id.account_password)
@@ -18,6 +20,9 @@ class AccountActivity : AppCompatActivity() {
         val btnDelete: TextView = findViewById(R.id.btn_delete_account)
 
         btnBack.setOnClickListener { finish() }
+        btnOpenSettings.setOnClickListener {
+            startActivity(Intent(this, SettingsActivity::class.java))
+        }
 
         btnSave.setOnClickListener {
             val name = userName.text.toString()
