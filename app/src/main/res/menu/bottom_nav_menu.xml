@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home_icon_selector"
+        android:title="الرئيسية" />
+    <item
+        android:id="@+id/nav_categories"
+        android:icon="@drawable/search_icon"
+        android:title="التصنيفات" />
+    <item
+        android:id="@+id/nav_football"
+        android:icon="@drawable/football_icon"
+        android:title="كورة" />
+    <item
+        android:id="@+id/nav_downloads"
+        android:icon="@drawable/netflix_download"
+        android:title="التنزيلات" />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/settings_icon_selector"
+        android:title="الإعدادات" />
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/home_icon_outline_24"
+        android:title="حسابي" />
+</menu>

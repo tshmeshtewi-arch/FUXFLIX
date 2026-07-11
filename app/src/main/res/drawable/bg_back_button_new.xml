@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- شكل جديد وقوي لزر الرجوع: دائرة داكنة بحافة حمراء متوهجة -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#CC0A0A0A" />
+            <stroke
+                android:width="1.5dp"
+                android:color="@color/accent_red" />
+        </shape>
+    </item>
+</layer-list>

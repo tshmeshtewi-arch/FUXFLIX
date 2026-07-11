@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#0A0A0A</color>
+    <color name="dark_bg">#141414</color>
+    <color name="card_bg">#1A1A2E</color>
+    <color name="card_bg_light">#1F1F1F</color>
+    <color name="accent_red">#E50914</color>
+    <color name="accent_red_dark">#B20710</color>
+    <color name="accent_gold">#F5C518</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B3B3B3</color>
+    <color name="text_muted">#808080</color>
+    <color name="overlay_dark">#99000000</color>
+    <color name="shimmer_color">#2A2A2A</color>
+    <color name="search_bg">#2A2A2A</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="chip_color">#2A2A2A</color>
+
+    <!-- ألوان بطاقات التصنيفات (مطابقة للتصميم) -->
+    <color name="cat_action">#C0392B</color>
+    <color name="cat_drama">#2C3E9E</color>
+    <color name="cat_scifi">#5B2C8D</color>
+    <color name="cat_horror">#D2691E</color>
+    <color name="cat_comedy">#4B2E6F</color>
+    <color name="cat_romance">#7A1F2B</color>
+    <color name="cat_documentary">#1E7145</color>
+    <color name="cat_anime">#1B6FA8</color>
+
+    <!-- ألوان الكورة -->
+    <color name="football_green">#0E8A3E</color>
+    <color name="football_live">#E50914</color>
+</resources>

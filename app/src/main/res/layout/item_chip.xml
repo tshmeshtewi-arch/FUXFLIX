@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:chipBackgroundColor="@color/chip_color"
+    app:chipCornerRadius="20dp"
+    app:chipStrokeWidth="0dp"
+    android:textColor="@color/text_primary"
+    app:checkedIconVisible="false"
+    app:chipIconVisible="false"
+    android:textSize="13sp"
+    app:rippleColor="@color/accent_red" />

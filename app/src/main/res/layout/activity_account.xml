@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_bg"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent" android:layout_height="56dp"
+        android:paddingHorizontal="16dp" android:background="@color/card_bg">
+        <ImageButton android:id="@+id/btn_account_back"
+            android:layout_width="38dp" android:layout_height="38dp"
+            android:background="@drawable/bg_back_button_new" android:src="@drawable/ic_back_arrow"
+            android:padding="8dp" android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="إدارة الحساب" android:textColor="@color/text_primary"
+            android:textSize="18sp" android:textStyle="bold"
+            android:layout_marginStart="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_account_back"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:padding="20dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:gravity="center_horizontal">
+
+            <ImageView android:layout_width="80dp" android:layout_height="80dp"
+                android:layout_marginTop="32dp" android:src="@android:drawable/ic_menu_myplaces"
+                android:background="@drawable/bg_search_icon" android:padding="16dp"
+                android:tint="@color/accent_red" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" android:text="حسابي"
+                android:textColor="@color/text_primary" android:textSize="22sp" android:textStyle="bold" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="32dp" android:text="الاسم"
+                android:textColor="@color/text_secondary" android:textSize="13sp" />
+            <EditText android:id="@+id/account_name"
+                android:layout_width="match_parent" android:layout_height="48dp"
+                android:layout_marginTop="4dp" android:background="@drawable/bg_search"
+                android:paddingHorizontal="16dp" android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_muted" android:hint="أدخل اسمك"
+                android:textSize="15sp" android:inputType="textPersonName" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" android:text="البريد الإلكتروني"
+                android:textColor="@color/text_secondary" android:textSize="13sp" />
+            <EditText android:id="@+id/account_email"
+                android:layout_width="match_parent" android:layout_height="48dp"
+                android:layout_marginTop="4dp" android:background="@drawable/bg_search"
+                android:paddingHorizontal="16dp" android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_muted" android:hint="example@email.com"
+                android:textSize="15sp" android:inputType="textEmailAddress" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" android:text="كلمة المرور"
+                android:textColor="@color/text_secondary" android:textSize="13sp" />
+            <EditText android:id="@+id/account_password"
+                android:layout_width="match_parent" android:layout_height="48dp"
+                android:layout_marginTop="4dp" android:background="@drawable/bg_search"
+                android:paddingHorizontal="16dp" android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_muted" android:hint="••••••••"
+                android:textSize="15sp" android:inputType="textPassword" />
+
+            <Button android:id="@+id/btn_save_account"
+                android:layout_width="match_parent" android:layout_height="50dp"
+                android:layout_marginTop="32dp" android:background="@drawable/btn_rounded_white"
+                android:text="حفظ التغييرات" android:textColor="@color/black"
+                android:textStyle="bold" android:textSize="16sp" />
+
+            <TextView android:id="@+id/btn_delete_account"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" android:text="حذف الحساب"
+                android:textColor="#FF4444" android:textSize="14sp"
+                android:padding="12dp" android:clickable="true" android:focusable="true" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
